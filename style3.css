@@ -15,6 +15,18 @@ body {
     margin-bottom: 35px;
 }
 
+.projects,
+.posts {
+    opacity: 0;
+    transform: translateY(50px); /* Verschiebe die Elemente um 50 Pixel nach unten */
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.projects.active,
+.posts.active {
+    opacity: 1;
+    transform: translateY(0);
+}
 
 
 
